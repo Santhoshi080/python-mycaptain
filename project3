@@ -1,0 +1,10 @@
+def char(str1):
+    S = {}
+    for n in str1:
+        keys = S.keys()
+        if n in keys:
+            S[n] += 1
+        else:
+            S[n] = 1
+    return S
+print(char('Helloo'))
